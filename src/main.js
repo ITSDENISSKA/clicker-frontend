@@ -7,6 +7,7 @@ import App from './App.vue'
 import router from './router'
 import PrimeVue from "primevue/config";
 import Aura from '@primevue/themes/aura';
+import axios from 'axios';
 
 const app = createApp(App)
 
@@ -17,4 +18,5 @@ app.use(PrimeVue, {
         preset: Aura
     }
 });
+
 app.mount('#app')

@@ -5,9 +5,9 @@ const _count = ref(0);
 
 </script>
 <template>
-    
+
   <div
-    class="h-full w-full flex flex-col justify-center items-center space-y-20"
+    class="h-5/6 w-full flex flex-col justify-center   items-center space-y-20"
   >
     <span class="text-5xl text-purple-900 font-bold"> {{ _count }} </span>
     <p

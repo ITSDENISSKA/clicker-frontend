@@ -6,4 +6,5 @@
 }
 * {
   transition: 0.3s;
+  user-select: none;
 }

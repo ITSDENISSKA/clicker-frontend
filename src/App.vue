@@ -1,41 +1,13 @@
 <script setup>
-import Accordion from "primevue/accordion";
-import AccordionPanel from "primevue/accordionpanel";
-import AccordionHeader from "primevue/accordionheader";
-import AccordionContent from "primevue/accordioncontent";
-import { ref } from "vue";
-const _count = ref(0);
-const _names = ref([";,kf", "kmfekvf", "fjknvkejnv", "ovoevoerv", "lvkmrfvo"]);
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 <template>
-  <div
-    class="h-full w-full flex flex-col justify-center items-center space-y-20"
-  >
-    <span class="text-5xl text-purple-900 font-bold"> {{ _count }} </span>
-    <p
-      class="p-24 bg-[url(../assets/img/img.jpg)] bg-cover bg-center  rounded-full border-4 border-purple-950 text-3xl bg-purple-900 text-white/50 hover:bg-purple-950/20 cursor-pointer hover:scale-110 active:scale-90 hover:text-purple-950"
-      @click="_count++"
-    >
-      ЖМИ
-    </p>
-    <Accordion value="0" class="!w-4/5">
-      <AccordionPanel value="1" class="!w-full">
-        <AccordionHeader class="!text-xl !text-center"> РЕЙТИНГ</AccordionHeader>
-        <AccordionContent class="!w-full">
-          <div class="w-full flex flex-col items-center">
-            <div v-for="i in 5" class="flex flex-col w-full">
-              <div class="flex items-center justify-between p-6">
-                <span class="text-3xl">{{ i }}</span>
-                <span class="text-3xl">
-                  {{ _names[i - 1] }}
-                </span>
-              </div>
+  <div class="h-full">
+    <div class="fixed top-0 w-full space-x-4 py-4 px-10 flex justify-end">
+      <RouterLink to="/"  class="bg-purple-950 text-white/80  cursor-pointer border border-purple-950 py-2 px-4 hover:bg-white/0 ">Главная</RouterLink>
 
-              <div v-if="i != 5" class="h-[.1rem] w-full bg-purple-950"></div>
-            </div>
-          </div>
-        </AccordionContent>
-      </AccordionPanel>
-    </Accordion>
+      <RouterLink to="/rating" class="bg-purple-950 text-white/80  cursor-pointer border border-purple-950 py-2 px-4 hover:bg-white/0 ">Рейтинг</RouterLink>
+    </div>
+    <RouterView class="h-full"></RouterView>
   </div>
 </template>

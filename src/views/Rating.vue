@@ -36,7 +36,7 @@ onBeforeMount(() => {
                 </span>
               </div>
 
-              <div v-if="i != 5" class="h-[.1rem] w-full bg-purple-950"></div>
+              <div v-if="index != 5" class="h-[.1rem] w-full bg-purple-950"></div>
             </div>
           </div>
     </div>

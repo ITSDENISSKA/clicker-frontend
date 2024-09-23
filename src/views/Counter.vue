@@ -46,7 +46,9 @@ const sendPatchRequest = async () => {
     })
     .then((response) => console.log(response.data))
     .catch((error) => console.error(error));
+  await fetchUserData();
 };
+
 
 onMounted(async () => {
   // Запускаем интервал для отправки запроса каждые 10 секунд

@@ -24,7 +24,7 @@ onBeforeMount(() => {
 <template>
     <div class="flex flex-col justify-center space-y-16">
         <p class="text-4xl text-center text-white">РЕЙТИНГ</p>
-        <div class="w-4/5 my-0 mx-auto flex flex-col items-center h-3/4 overflow-auto">
+        <div class="w-4/5 my-0 mx-auto flex flex-col items-center h-3/5 overflow-auto">
             <div v-for="(user, index) in _liders" class="flex flex-col w-full ">
               <div class="flex items-center justify-between p-4 text-white shadow-xl rounded-md hover:shadow-2xl">
                 <span class="text-xl">{{ index + 1}}</span>

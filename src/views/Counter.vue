@@ -10,7 +10,10 @@ const MAIN_URL = "https://ms.sdodo.ru/api/v1";
 const user = ref({ user_id: 0, score: 0, speed: 0, username: '' });
 
 const _user_id = tg.initDataUnsafe.user.id // уникальный идентификатор пользователя;
-const _username = tg.initDataUnsafe.user.username; 
+const _username = tg.initDataUnsafe.user.username;
+
+// const _user_id = 123456;
+// const _username = "test_user";
 
 console.log()
 // const _username = tg.initDataUnsafe.user.username;

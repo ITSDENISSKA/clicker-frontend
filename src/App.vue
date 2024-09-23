@@ -19,15 +19,15 @@ import { RouterLink, RouterView } from "vue-router";
 </template>
 <style>
 .gradient-background {
-  background: #e69552a8;
-  box-shadow: 0 -500px 300px -120px #3f6212ad inset;
-  animation: background 10s infinite alternate;
+  background: #e69552aa;
+  box-shadow: 0 -500px 500px -120px #3f621280 inset;
+  animation: background 7s infinite alternate;
 }
 
 @keyframes background {
   50% {
-    background: #3f6212b4;
-    box-shadow: 0 -500px 300px -100px #e69552ac  inset;
+    background: #3f62129e;
+    box-shadow: 0 -500px 500px -100px #e69552bd  inset;
   }
 }
 </style>

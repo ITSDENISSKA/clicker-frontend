@@ -49,7 +49,7 @@ onMounted(async () => {
   // Запускаем интервал для отправки запроса каждые 10 секунд
   intervalId = setInterval(async () => {
     await sendPatchRequest();
-  }, 10000); // 10000 миллисекунд = 10 секунд
+  }, 3000); // 10000 миллисекунд = 10 секунд
 });
 onUnmounted(async () => {
   await sendPatchRequest();
